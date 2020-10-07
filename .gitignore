@@ -1,0 +1,5 @@
+node_modules/
+*.js
+*.txt
+!script.js
+!*min.js

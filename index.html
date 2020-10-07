@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="Markdown previewer">
+        <meta name="description" content="Simple markdown previewer">
+        <meta name="keywords" content="markdown, editor, previewer, Github">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <meta name="author" content="Thiago Rocha Ferreira">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <nav id="navbar">
+                <a href="index.html">Markdown previewer</a>
+            </nav>
+            <div id="control">
+                <button id="btn-copy">Copy</button>
+            </div>
+            <div id="grid">
+                <textarea id="input"></textarea>
+                <div id="output">Text</div>
+            </div>
+            <footer id="footer">
+                <p>Made with <span id="heart">❤️</span> by <a href="http://github.com/thiagorocha503" target="_blank" rel="noopener noreferrer" title="Thiago Rocha" >Thiago Rocha</a> </p>
+            </footer>
+        </div>
+        <script src="js/marked.min.js"></script>
+        <script src="js/purify.min.js"></script>
+        <script src="js/jquery.slim.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
