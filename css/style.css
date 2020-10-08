@@ -6,7 +6,6 @@
 */
 
 
-
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -89,6 +88,7 @@ body {
     margin: 0;
     padding: 8px;
     resize: none;
+    outline: none;
 }
 
 #output {
@@ -104,7 +104,6 @@ body {
 
 #btn-copy {
     border: 1px solid #4CAF50;
-    ;
     padding: 8px 15px;
     background-color: #4CAF50;
     border-radius: 5px;
@@ -115,7 +114,6 @@ body {
 #btn-copy:hover {
     opacity: 0.8;
 }
-
 
 /* Table  style  */
 table {
@@ -148,22 +146,14 @@ code {
     padding: .2em .4em;
     background-color: #f3f4f4;
     margin: 0;
-    font-size: 85%;
+    font-size: 90%;
     border-radius: 5px;
-}
-
-pre {
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
 }
 
 pre code {
     padding: 10px;
     display: block;
     overflow-x: auto;
-    color: #333;
     background: #f8f8f8;
     font-size: 85%;
     line-height: 1.45;

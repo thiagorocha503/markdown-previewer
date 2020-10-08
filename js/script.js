@@ -1,6 +1,12 @@
 "use strict";
 var input = $("#input");
 var output = $("#output");
+// set highlight
+marked.setOptions({
+    highlight: function (code) {
+        return hljs.highlightAuto(code).value;
+    }
+});
 function render() {
     var dirty = marked(input.val());
     // sanitize the output HTML

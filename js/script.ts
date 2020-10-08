@@ -1,6 +1,12 @@
 const input: JQuery<HTMLElement> = $("#input");
 const output: JQuery<HTMLElement> = $("#output");
 
+// set highlight
+marked.setOptions({
+    highlight: function(code) {
+      return hljs.highlightAuto(code).value;
+    }
+});
 
 function render() { 
     let dirty = marked(input.val() as string);
