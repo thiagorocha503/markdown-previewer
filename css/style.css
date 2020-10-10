@@ -75,6 +75,7 @@ body {
 }
 
 #input,
+.CodeMirror,
 #output {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -92,10 +93,16 @@ body {
 }
 
 #output {
-    padding: 5px 10px;
+    padding: 5px 15px;
     overflow-y: auto;
     overflow-x: hidden;
     word-break: break-all;
+}
+
+.CodeMirror{
+    border: 2px solid #4CAF50;
+    height: auto;
+    margin: 0;
 }
 
 #control {

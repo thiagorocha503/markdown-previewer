@@ -11,6 +11,7 @@
         <meta name="language" content="English">
         <meta name="author" content="Thiago Rocha Ferreira">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+        <link rel="stylesheet" href="css/codemirror.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -23,13 +24,20 @@
             </div>
             <div id="grid">
                 <textarea id="input"></textarea>
-                <div id="output">Text</div>
+                <div id="output"></div>
             </div>
             <footer id="footer">
                 <p>Made with <span id="heart">❤️</span> by <a href="http://github.com/thiagorocha503" target="_blank" rel="noopener noreferrer" title="Thiago Rocha" >Thiago Rocha</a> </p>
             </footer>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+        <script src="js/codemirror.min.js"></script>  
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/addon/selection/active-line.min.js" integrity="sha512-ysQeDEwbdvERZqZCqFd64rVjSx4ExrC/r581h40cMF4e6rFWS6VxvdVxmSf/cLr+oe9mVxxzWSMhPJYSFyiVew==" crossorigin="anonymous"></script>
+		<script src="js/markdown.min.js"></script>	
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/javascript/javascript.min.js" integrity="sha512-e3U/84Fo+2ZAnRhLkjStm2hYnkmZ/NRmeesZ/GHjDhcLh35eYTQxsfSeDppx6Se5aX0N6mrygH7tr4wugWsPeQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/addon/edit/continuelist.min.js" integrity="sha512-ceKIVABwWyg27e+k6izsU+X/c87SHzv9Byu6CVSyA1fK9VZiNxJDcz6hhmyhyg82WGZoj7JTFLpLCQ041DVLvw==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/xml/xml.min.js" integrity="sha512-k1HnoY9EXahEfPz7kq/lD9DltloKH9OrB9XNKYoUQrNz9epe5F4mQP5PfuIfeRfoXHkNrE0gF3Mx4LhC5BVl9Q==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/css/css.min.js" integrity="sha512-DG+5u//fVN9kpDgTGe78IJhJW8e5+tlrPaMgNqcrzyPXsn+GPaF2T62+X3ds7SuhFR9Qeb7XZ6kMD8X09FeJhA==" crossorigin="anonymous"></script>       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>       
         <script src="js/marked.min.js"></script>
         <script src="js/purify.min.js"></script>
         <script src="js/jquery.slim.min.js"></script>
