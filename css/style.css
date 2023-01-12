@@ -20,6 +20,11 @@ body {
     height: 100%;
 }
 
+
+:root{
+    --green: #4CAF50;
+}
+
 #heart {
     color: red;
 }
@@ -38,7 +43,7 @@ body {
 #navbar {
     font-size: 20px;
     padding: 15px;
-    background-color: #4CAF50;
+    background-color:var(--green);
     color: white;
 }
 
@@ -48,19 +53,23 @@ body {
 }
 
 #footer {
-    padding: 15px;
+    height: 50px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: center;
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    
 }
 
-#footer a {
+#footer a { 
     color: grey;
 }
 
 #footer a:hover {
-    color: #4CAF50;
+    color:var(--green);
 }
 
 #grid {
@@ -82,7 +91,8 @@ body {
             flex-grow: 1;
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
-    border: 2px solid #4CAF50;
+    border-top: 2px solid var(--green);
+   
 }
 
 #input {
@@ -90,6 +100,9 @@ body {
     padding: 8px;
     resize: none;
     outline: none;
+    border-left: 2px solidvar(--green);
+
+
 }
 
 #output {
@@ -97,10 +110,10 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     word-break: break-all;
+    border-left: 2px solid var(--green);
 }
 
 .CodeMirror{
-    border: 2px solid #4CAF50;
     height: auto;
     margin: 0;
 }
@@ -110,9 +123,9 @@ body {
 }
 
 #btn-copy {
-    border: 1px solid #4CAF50;
+    border: 1px solid var(--green);
     padding: 8px 15px;
-    background-color: #4CAF50;
+    background-color: var(--green);
     border-radius: 5px;
     color: white;
     cursor: pointer;
