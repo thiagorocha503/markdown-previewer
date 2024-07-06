@@ -1,0 +1,24 @@
+:root {
+    --padding: 10px;
+}
+#wrapper {
+    flex-grow: 1;
+}
+
+.box {
+    width: calc((100vw - var(--padding)) / 2);
+}
+
+#preview,
+#editor {
+    padding: 18px;
+    height: calc(100vh - 180px);
+    overflow: auto;
+}
+#editor {
+    resize: none;
+    outline: none;
+}
+#preview {
+    overflow-wrap: break-word;
+}

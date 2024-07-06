@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+:root {
+    --color-border-muted: hsl(210, 18%, 87%);
+}
+
+#preview h1,
+#preview h2,
+#preview h3,
+#preview h4,
+#preview h5,
+#preview h6 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-border-muted);
+}
+
+table {
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+tr {
+    border-top: 2px solid #dee2e6;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr th {
+    background-color: #f2f2f2;
+}
+td,
+th {
+    padding: 10px;
+}
+code {
+    font-family: "Fira Code", monospace;
+    padding: 0.2em 0.4em;
+    background-color: #f3f4f4;
+    margin: 0;
+    font-size: 18px;
+    border-radius: 5px;
+}
+pre code {
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+    background: #f8f8f8;
+    line-height: 1.45;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+blockquote {
+    background-color: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 1.5em 10px;
+}
+blockquote p {
+    color: black;
+    font-size: 21px;
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+}
+hr {
+    border-top: 1px solid black;
+}
